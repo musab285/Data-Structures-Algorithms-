@@ -103,18 +103,36 @@ int main(){
     int arr[5] = {3,1, 2, 5, 8}; 
     for(int i=0; i<5; i++) cout<<arr[i]<<endl; 
     LinkedList lst; 
+    cout << "Creating linked list from array:" << endl;
     lst.insertAtEnd(3);
     lst.insertAtEnd(1);
     lst.insertAtEnd(2);
     lst.insertAtEnd(5);
     lst.insertAtEnd(8);
+    cout << "Initial linked list:" << endl;
     lst.display();
-    lst.insertInMiddle(11 , 3); 
+
+    cout << "Inserting 9 at the end:" << endl;
+    lst.insertAtEnd(9);
     lst.display();
-    lst.insertAtStart(10); 
-    lst.display(); 
-    lst.deleteNode(2); 
-    lst.deleteNode(1); 
-    lst.deleteNode(5); 
-    lst.display(); 
+
+    cout << "Inserting 11 at position 3:" << endl;
+    lst.insertInMiddle(11, 3);
+    lst.display();
+
+    cout << "Inserting 4 at the front:" << endl;
+    lst.insertAtStart(4);
+    lst.display();
+
+    cout << "Deleting 1:" << endl;
+    lst.deleteNode(1);
+    lst.display();
+
+    cout << "Deleting 2:" << endl;
+    lst.deleteNode(2);
+    lst.display();
+
+    cout << "Deleting 5:" << endl;
+    lst.deleteNode(5);
+    lst.display();
 }
