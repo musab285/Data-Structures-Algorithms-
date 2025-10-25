@@ -6,12 +6,12 @@ struct Node {
     Node* next;
 };
 
-class elel {
+class LL {
 public:
     Node* head;
     Node* tail;
 
-    elel() {
+    LL() {
         head = nullptr;
         tail = nullptr;
     }
@@ -93,7 +93,7 @@ public:
 };
 
 int main() {
-    elel* one = new elel();
+    LL* one = new LL();
     one->add(2);
     one->add(26);
     one->add(25);
@@ -104,7 +104,7 @@ int main() {
     one->dltend();
     one->dltstrt();
     one->dltmddl(2);
-    cout << "dlte" << endl;
+    cout << "delted" << endl;
 
     one->display();
 
