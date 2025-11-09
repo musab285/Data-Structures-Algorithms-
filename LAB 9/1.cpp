@@ -78,3 +78,14 @@ Node* convertToAVL(Node* root) {
     root->r = convertToAVL(root->r);
     return balance(root);
 }
+
+int main(){
+    Node* root = newNode(30);
+    root->l = newNode(20);
+    root->r = newNode(40);
+    root->l->l = newNode(10);
+    root->r->r = newNode(50);
+
+    root = convertToAVL(root);
+
+}
